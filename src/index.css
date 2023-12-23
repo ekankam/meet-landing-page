@@ -1,0 +1,23 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;900&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-family: "Red Hat Display", sans-serif;
+  --brand-blue: hsla(192, 37%, 48%, 1);
+  --brand-royal-purple: hsla(268, 34%, 53%, 1);
+  --brand-space-cadet: hsla(240, 21%, 20%, 1);
+  --brand-cool-gray: hsla(240, 10%, 57%, 1);
+  --brand-photo-blue: hsla(192, 90%, 77%, 1);
+  --brand-mauve: hsla(268, 100%, 86%, 1);
+  --brand-platinum: hsla(0, 0%, 87%, 1);
+  --brand-seasalt: hsla(0, 0%, 98%, 1);
+}
+
+html,
+body {
+  min-height: 100%;
+  font-family: var(--font-family);
+  font-weight: 500;
+}
