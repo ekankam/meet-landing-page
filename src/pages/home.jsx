@@ -6,7 +6,7 @@ import Button from "../components/ui/button";
 
 function ImageContainer({ src, alt }) {
   return (
-    <div className="rounded-lg flex-shrink-0 overflow-hidden">
+    <div className="flex-shrink-0 overflow-hidden rounded-lg">
       <img src={src} alt={alt} className="h-auto max-w-full" />
     </div>
   );
@@ -19,8 +19,8 @@ ImageContainer.propTypes = {
 
 function Content() {
   return (
-    <section className="pt-[114px] w-full static lg:absolute lg:top-[30.5rem]">
-      <div className="w-full flex items-center justify-center mb-16">
+    <section className="pt-24 md:pt-[114px] w-full static lg:absolute lg:top-[30.5rem]">
+      <div className="flex items-center justify-center w-full mb-16">
         <Step label="01" />
       </div>
       <div className="grid grid-cols-2 w-full place-items-center gap-4 px-6 md:grid-cols-4 mb-14 md:mb-[38px] lg:mb-[66px]">
@@ -41,7 +41,7 @@ function Content() {
           alt="men texting"
         />
       </div>
-      <div className="text-center flex flex-col items-center">
+      <div className="flex flex-col items-center text-center">
         <p className="font-black tracking-[4px] uppercase text-brand-blue mb-6">
           Built for modern use
         </p>
@@ -57,9 +57,9 @@ function Content() {
       <footer className="bg-[url('/assets/mobile/image-footer.jpg')] md:bg-[url('/assets/tablet/image-footer.jpg')] lg:bg-[url('/assets/desktop/image-footer.jpg')] h-full w-full bg-no-repeat bg-cover mt-[184px] relative  before:content-[''] before:absolute before:inset-0 before:block before:bg-brand-blue before:opacity-85 before:z-[-5] z-10 px-6 py-20">
         <Step
           label="02"
-          className="absolute -top-28 left-1/2 -translate-x-1/2"
+          className="absolute -translate-x-1/2 -top-28 left-1/2"
         />
-        <div className="text-brand-seasalt flex flex-col lg:flex-row items-center justify-center text-center lg:gap-20 lg:text-start">
+        <div className="flex flex-col items-center justify-center text-center text-brand-seasalt lg:flex-row lg:gap-20 lg:text-start">
           <div className=" text-[32px] font-black leading-9 mb-6 lg:text-[40px] lg:w-96">
             Experience more together
           </div>
